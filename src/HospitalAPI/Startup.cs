@@ -30,6 +30,7 @@ using HospitalLibrary.Core.Feedback;
 using HospitalLibrary.Core.Statistics;
 using HospitalLibrary.Core.ApptSchedulingSession.UseCases;
 using HospitalLibrary.Core.ApptSchedulingSession.Storage;
+using HospitalLibrary.Core.BloodSubscription;
 
 namespace HospitalAPI
 {
@@ -148,6 +149,9 @@ namespace HospitalAPI
             services.AddScoped<IPatientHealthMeasurementsService, PatientHealthMeasurementsService>();
             services.AddScoped<IPatientHealthMeasurementsRepository, PatientHealthMeasurementsRepository>();
 
+            services.AddScoped<IBloodSuppliesRepository, BloodSuppliesRepository>();
+            services.AddScoped<IBloodSubscriptionRepository, BloodSubscriptionRepository>();
+            services.AddScoped<IBloodSubscriptionService, BloodSubscriptionService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

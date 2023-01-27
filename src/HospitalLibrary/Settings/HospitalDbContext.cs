@@ -20,6 +20,8 @@ using HospitalLibrary.Core.Infrastructure;
 using Microsoft.AspNetCore.Identity;
 using System.Data;
 using System.Xml.Linq;
+using HospitalLibrary.Core.BloodSubscription;
+using Microsoft.EntityFrameworkCore.Internal;
 
 namespace HospitalLibrary.Settings
 {
@@ -71,7 +73,8 @@ namespace HospitalLibrary.Settings
         public DbSet<PatientHealthMeasurements> PatientHealthMeasurements { get; set; }
         public DbSet<DomainEvent> ReportCreationEvents { get; set; }
       
-
+        public DbSet<BloodSubscription> BloodSubscriptions { get; set; }
+        public DbSet<BloodSupplies> BloodSupplies { get; set; }
 
         public HospitalDbContext(DbContextOptions<HospitalDbContext> options) : base(options)
         {
