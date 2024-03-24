@@ -1,5 +1,4 @@
-# hospital-be
+<h2>An ASP.NET Core backend Hospital application </h2>
 
-1. Instalirati Postgres
-2. Ako je potrebno, u appsettings.json (HospitalAPI) promeniti username i password da odgovara bazi
-3. U terminalu se pozicionirati u HospitalAPI i izvršiti komandu __dotnet ef database update__ kako bi se kreirala baza
+The purpose of this application is to enable a seamless management of hospital appointments and resources. It provides a RESTful API intended to be used by doctors, hospital staff and patients. 
+The development of this application was based on Scrum, TDD and DDD principles in order to simultaneously utilize the potential of each student and enforce good and reliable practicies.
